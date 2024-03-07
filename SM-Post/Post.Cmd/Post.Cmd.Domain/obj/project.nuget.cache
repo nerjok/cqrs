@@ -1,8 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "NC7RkzfskB64XDTC8mzKoyzgaj3bY+ekvOpd69Wkjfk2ylKzlKy1tzuBjlMI3JuYF2iczmVarvIY3zg+ExKHYA==",
+  "dgSpecHash": "/HCAg9zPDdSezme8uN+xC8PWPUEfk4yCTwILItSVFUv5/HWuTsJgZ6Fhwj/JZ7Wg4eWsEjWcKo/+NOu8Sv9Zew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Cmd\\Post.Cmd.Domain\\Post.Cmd.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/dell/Documents/charp/cqrs/SM-Post/Post.Cmd/Post.Cmd.Domain/Post.Cmd.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/dell/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
+    "/home/dell/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",
+    "/home/dell/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
+    "/home/dell/.nuget/packages/microsoft.extensions.logging.abstractions/2.0.0/microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
+    "/home/dell/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "/home/dell/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "/home/dell/.nuget/packages/mongodb.bson/2.24.0/mongodb.bson.2.24.0.nupkg.sha512",
+    "/home/dell/.nuget/packages/mongodb.driver/2.24.0/mongodb.driver.2.24.0.nupkg.sha512",
+    "/home/dell/.nuget/packages/mongodb.driver.core/2.24.0/mongodb.driver.core.2.24.0.nupkg.sha512",
+    "/home/dell/.nuget/packages/mongodb.libmongocrypt/1.8.2/mongodb.libmongocrypt.1.8.2.nupkg.sha512",
+    "/home/dell/.nuget/packages/sharpcompress/0.30.1/sharpcompress.0.30.1.nupkg.sha512",
+    "/home/dell/.nuget/packages/snappier/1.0.0/snappier.1.0.0.nupkg.sha512",
+    "/home/dell/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/home/dell/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/home/dell/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "/home/dell/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/home/dell/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
+    "/home/dell/.nuget/packages/zstdsharp.port/0.7.3/zstdsharp.port.0.7.3.nupkg.sha512"
+  ],
   "logs": []
 }

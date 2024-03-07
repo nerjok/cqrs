@@ -1,0 +1,16 @@
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/bin/Debug/net8.0/Post.Common.deps.json
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/bin/Debug/net8.0/Post.Common.dll
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/bin/Debug/net8.0/Post.Common.pdb
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/obj/Debug/net8.0/Post.Common.GeneratedMSBuildEditorConfig.editorconfig
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/obj/Debug/net8.0/Post.Common.AssemblyInfoInputs.cache
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/obj/Debug/net8.0/Post.Common.AssemblyInfo.cs
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/obj/Debug/net8.0/Post.Common.csproj.CoreCompileInputs.cache
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/obj/Debug/net8.0/Post.Common.sourcelink.json
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/obj/Debug/net8.0/Post.Common.dll
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/obj/Debug/net8.0/refint/Post.Common.dll
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/obj/Debug/net8.0/Post.Common.pdb
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/obj/Debug/net8.0/ref/Post.Common.dll
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/bin/Debug/net8.0/CQRS.Core.dll
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/bin/Debug/net8.0/CQRS.Core.pdb
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/obj/Debug/net8.0/Post.Common.csproj.AssemblyReference.cache
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/obj/Debug/net8.0/Post.Common.csproj.CopyComplete
