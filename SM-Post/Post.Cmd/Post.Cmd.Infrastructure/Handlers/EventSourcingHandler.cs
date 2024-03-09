@@ -1,14 +1,12 @@
 
 using CQRS.Core.Domain;
 using CQRS.Core.Handlers;
-
-
 using Post.Cmd.Domain.Aggregates;
 using Post.Cmd.Infrastructure.Dispatchers;
 
 namespace Post.Common.Handlers;
 
-public class EventSourcingHandler : IEventHander<PostAggregate>
+public class EventSourcingHandler : IEventSourcingHander<PostAggregate>
 {
     private IEventStore _eventStore;
     public EventSourcingHandler(IEventStore eventStore)
@@ -26,6 +24,7 @@ public class EventSourcingHandler : IEventHander<PostAggregate>
         }
         aggregate.ReplayEvents(events);
         var latestVersion = events.Select(x => x.Version).Max();
+        aggregate.Version = latestVersion;
         return aggregate;
     }
 

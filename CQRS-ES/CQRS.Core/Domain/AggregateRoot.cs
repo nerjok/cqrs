@@ -1,48 +1,46 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using CQRS.Core.Events;
 
-namespace CQRS.Core.Domain
+namespace CQRS.Core.Domain;
+
+public abstract class AggregateRoot
 {
-    public abstract class AggregateRoot
+    protected Guid _id;
+    private readonly List<BaseEvent> _changes = new();
+
+    public Guid Id { get { return _id; } }
+    public int Version { get; set; } = -1;
+    public IEnumerable<BaseEvent> GetUncommitedChanges()
     {
-        protected Guid _id;
-        private readonly List<BaseEvent> _changes = new();
-
-        public Guid Id { get { return _id; } }
-        public int Version { get; set; } = -1;
-        public IEnumerable<BaseEvent> GetUncommitedChanges()
+        return _changes;
+    }
+    public void MarkChangesAsCommited()
+    {
+        _changes.Clear();
+    }
+    private void ApplyChange(BaseEvent @event, bool isNew)
+    {
+        var method = this.GetType().GetMethod("Apply", new Type[] { @event.GetType() });
+        if (method == null)
         {
-            return _changes;
+            throw new ArgumentNullException(nameof(method), $"Apply method was not found {@event.GetType().Name}");
         }
-        public void MarkChangesAsCommited()
+        method.Invoke(this, new object[] { @event });
+        if (isNew)
         {
-            _changes.Clear();
+            _changes.Add(@event);
         }
-        private void ApplyChange(BaseEvent @event, bool isNew)
+    }
+
+    protected void RaiseEvent(BaseEvent @event)
+    {
+        ApplyChange(@event, true);
+    }
+
+    public void ReplayEvents(IEnumerable<BaseEvent> events)
+    {
+        foreach (var @event in events)
         {
-            var method = this.GetType().GetMethod("Apply", new Type[] { @event.GetType() });
-            if (method == null)
-            {
-                throw new ArgumentNullException(nameof(method), $"Apply method was not found {@event.GetType().Name}");
-            }
-            method.Invoke(this, new object[] { @event });
-            if(isNew) {
-                _changes.Add(@event);
-            }
-        }
-
-        protected void RaiseEvent(BaseEvent @event) {
-            ApplyChange(@event, true);
-        }
-
-        public void ReplayEvents(IEnumerable<BaseEvent> events) {
-            foreach (var @event in events)
-            {
-                ApplyChange(@event, false);
-            }
+            ApplyChange(@event, false);
         }
     }
 }
