@@ -143,3 +143,5 @@
 /home/dell/Documents/charp/cqrs/SM-Post/Post.Query/Post.Query.Api/bin/Debug/net8.0/runtimes/win/native/mongocrypt.dll
 /home/dell/Documents/charp/cqrs/SM-Post/Post.Query/Post.Query.Api/bin/Debug/net8.0/CQRS.Core.dll
 /home/dell/Documents/charp/cqrs/SM-Post/Post.Query/Post.Query.Api/bin/Debug/net8.0/CQRS.Core.pdb
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Query/Post.Query.Api/bin/Debug/net8.0/Castle.Core.dll
+/home/dell/Documents/charp/cqrs/SM-Post/Post.Query/Post.Query.Api/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll

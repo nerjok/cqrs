@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+btk1ZqDPNiyTk/9zQ/TxyG/Pv1XX6uyNzxcAXWNMduG1OefjKzdsaO+hShViCSt0ccB80LUL7kJA/c09JJhdA==",
+  "dgSpecHash": "1V4hEnID2MmnCfaZY9bocGcHiaayMa0q71zIdiMaewCGzcaijGV89mGP6f5B0IcHOqOqSKQ7EuGLfNDKbDEZ3w==",
   "success": true,
   "projectFilePath": "/home/dell/Documents/charp/cqrs/SM-Post/Post.Query/Post.Query.Api/Post.Query.Api.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/home/dell/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "/home/dell/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/home/dell/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
+    "/home/dell/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/home/dell/.nuget/packages/confluent.kafka/2.3.0/confluent.kafka.2.3.0.nupkg.sha512",
     "/home/dell/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
     "/home/dell/.nuget/packages/librdkafka.redist/2.3.0/librdkafka.redist.2.3.0.nupkg.sha512",
@@ -20,6 +21,7 @@
     "/home/dell/.nuget/packages/microsoft.entityframeworkcore/8.0.2/microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
     "/home/dell/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.2/microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
     "/home/dell/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.2/microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",
+    "/home/dell/.nuget/packages/microsoft.entityframeworkcore.proxies/8.0.2/microsoft.entityframeworkcore.proxies.8.0.2.nupkg.sha512",
     "/home/dell/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.2/microsoft.entityframeworkcore.relational.8.0.2.nupkg.sha512",
     "/home/dell/.nuget/packages/microsoft.entityframeworkcore.sqlite/8.0.2/microsoft.entityframeworkcore.sqlite.8.0.2.nupkg.sha512",
     "/home/dell/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/8.0.2/microsoft.entityframeworkcore.sqlite.core.8.0.2.nupkg.sha512",
