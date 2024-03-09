@@ -3,7 +3,8 @@ using Post.Query.Infrastructure.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 
-Action<DbContextOptionsBuilder> configureDBContext = (o => o.UseSqlite(builder.Configuration.GetConnectionString("WebApiDatabase")));
+// Action<DbContextOptionsBuilder> configureDBContext = (o => o.UseLazyLoadingProxies().UseSqlite(builder.Configuration.GetConnectionString("SqlServer")));
+Action<DbContextOptionsBuilder> configureDBContext = (o => o.UseLazyLoadingProxies().UseSqlite(builder.Configuration.GetConnectionString("WebApiDatabase")));
 
 builder.Services.AddDbContext<DatabaseContext>(configureDBContext);
 builder.Services.AddSingleton<DatabaseContextFactory>(new DatabaseContextFactory(configureDBContext));

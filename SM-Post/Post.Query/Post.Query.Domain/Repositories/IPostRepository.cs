@@ -10,6 +10,6 @@ public interface IPostRepository
     Task<PostEntity> GetByIdAsyn(Guid postId);
     Task<List<PostEntity>> ListAllAsync();
     Task<List<PostEntity>> ListByAuthorAsync(string author);
-    Task<PostEntity> ListWithLikesAsync(int numberOfLikes);
+    Task<List<PostEntity>> ListWithLikesAsync(int numberOfLikes);
     Task<List<PostEntity>> ListWithCommentsAsync();
 }
