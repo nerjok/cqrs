@@ -1,0 +1,274 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FC57E1C-63AD-44D2-B57C-7E3CD90EB55A}|Post.Query\\Post.Query.Api\\Post.Query.Api.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\sm-post\\post.query\\post.query.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FC57E1C-63AD-44D2-B57C-7E3CD90EB55A}|Post.Query\\Post.Query.Api\\Post.Query.Api.csproj|solutionrelative:post.query\\post.query.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\sm-post\\post.query\\post.query.infrastructure\\consumers\\consumershostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|solutionrelative:post.query\\post.query.infrastructure\\consumers\\consumershostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\sm-post\\post.query\\post.query.infrastructure\\consumers\\eventconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|solutionrelative:post.query\\post.query.infrastructure\\consumers\\eventconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FC57E1C-63AD-44D2-B57C-7E3CD90EB55A}|Post.Query\\Post.Query.Api\\Post.Query.Api.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\sm-post\\post.query\\post.query.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0FC57E1C-63AD-44D2-B57C-7E3CD90EB55A}|Post.Query\\Post.Query.Api\\Post.Query.Api.csproj|solutionrelative:post.query\\post.query.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FC57E1C-63AD-44D2-B57C-7E3CD90EB55A}|Post.Query\\Post.Query.Api\\Post.Query.Api.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\sm-post\\post.query\\post.query.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0FC57E1C-63AD-44D2-B57C-7E3CD90EB55A}|Post.Query\\Post.Query.Api\\Post.Query.Api.csproj|solutionrelative:post.query\\post.query.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\sm-post\\post.query\\post.query.infrastructure\\converters\\eventjsonconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|solutionrelative:post.query\\post.query.infrastructure\\converters\\eventjsonconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F739DAB4-6B74-46D5-A576-93B1AB0D17DA}|Post.Common\\Post.Common.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\sm-post\\post.common\\events\\postcreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F739DAB4-6B74-46D5-A576-93B1AB0D17DA}|Post.Common\\Post.Common.csproj|solutionrelative:post.common\\events\\postcreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\sm-post\\post.query\\post.query.infrastructure\\post.query.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|solutionrelative:post.query\\post.query.infrastructure\\post.query.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{158D7EFE-8B6B-461B-A56B-D3887E9C0D1C}|..\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\cqrs-es\\cqrs.core\\consumers\\ieventconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\sm-post\\post.query\\post.query.infrastructure\\handlers\\eventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|solutionrelative:post.query\\post.query.infrastructure\\handlers\\eventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\sm-post\\post.query\\post.query.infrastructure\\handlers\\ieventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|solutionrelative:post.query\\post.query.infrastructure\\handlers\\ieventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E042EE3-1F9F-43A4-A8D3-B3D2D2B89319}|Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\sm-post\\post.query\\post.query.domain\\repositories\\icommentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E042EE3-1F9F-43A4-A8D3-B3D2D2B89319}|Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj|solutionrelative:post.query\\post.query.domain\\repositories\\icommentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E042EE3-1F9F-43A4-A8D3-B3D2D2B89319}|Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\sm-post\\post.query\\post.query.domain\\repositories\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E042EE3-1F9F-43A4-A8D3-B3D2D2B89319}|Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj|solutionrelative:post.query\\post.query.domain\\repositories\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\sm-post\\post.query\\post.query.infrastructure\\repositories\\commentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|solutionrelative:post.query\\post.query.infrastructure\\repositories\\commentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|c:\\users\\s8578f\\desktop\\sources\\cqrs\\sm-post\\post.query\\post.query.infrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71CB8B64-5DDB-4981-969F-27F1BDA92E50}|Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj|solutionrelative:post.query\\post.query.infrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsumersHostedService.cs",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Consumers\\ConsumersHostedService.cs",
+              "RelativeDocumentMoniker": "Post.Query\\Post.Query.Infrastructure\\Consumers\\ConsumersHostedService.cs",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Consumers\\ConsumersHostedService.cs",
+              "RelativeToolTip": "Post.Query\\Post.Query.Infrastructure\\Consumers\\ConsumersHostedService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T15:36:09.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Post.Query\\Post.Query.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Api\\appsettings.Development.json",
+              "RelativeToolTip": "Post.Query\\Post.Query.Api\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-11T15:15:33.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Post.Query\\Post.Query.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Api\\appsettings.json",
+              "RelativeToolTip": "Post.Query\\Post.Query.Api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-11T15:15:29.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Consumers\\EventConsumer.cs",
+              "RelativeDocumentMoniker": "Post.Query\\Post.Query.Infrastructure\\Consumers\\EventConsumer.cs",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Consumers\\EventConsumer.cs",
+              "RelativeToolTip": "Post.Query\\Post.Query.Infrastructure\\Consumers\\EventConsumer.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAADwvy4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T15:14:29.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PostCreatedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Common\\Events\\PostCreatedEvent.cs",
+              "RelativeDocumentMoniker": "Post.Common\\Events\\PostCreatedEvent.cs",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Common\\Events\\PostCreatedEvent.cs",
+              "RelativeToolTip": "Post.Common\\Events\\PostCreatedEvent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T15:02:51.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventJsonConverter.cs",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Converters\\EventJsonConverter.cs",
+              "RelativeDocumentMoniker": "Post.Query\\Post.Query.Infrastructure\\Converters\\EventJsonConverter.cs",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Converters\\EventJsonConverter.cs",
+              "RelativeToolTip": "Post.Query\\Post.Query.Infrastructure\\Converters\\EventJsonConverter.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T15:02:25.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Post.Query.Infrastructure",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj",
+              "RelativeToolTip": "Post.Query\\Post.Query.Infrastructure\\Post.Query.Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-11T15:01:46.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Post.Query\\Post.Query.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Api\\Program.cs",
+              "RelativeToolTip": "Post.Query\\Post.Query.Api\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T14:41:41.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IEventConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\CQRS-ES\\CQRS.Core\\Consumers\\IEventConsumer.cs",
+              "RelativeDocumentMoniker": "..\\CQRS-ES\\CQRS.Core\\Consumers\\IEventConsumer.cs",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\CQRS-ES\\CQRS.Core\\Consumers\\IEventConsumer.cs",
+              "RelativeToolTip": "..\\CQRS-ES\\CQRS.Core\\Consumers\\IEventConsumer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T14:59:28.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ICommentsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Domain\\Repositories\\ICommentsRepository.cs",
+              "RelativeDocumentMoniker": "Post.Query\\Post.Query.Domain\\Repositories\\ICommentsRepository.cs",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Domain\\Repositories\\ICommentsRepository.cs",
+              "RelativeToolTip": "Post.Query\\Post.Query.Domain\\Repositories\\ICommentsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T14:50:11.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IPostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Domain\\Repositories\\IPostRepository.cs",
+              "RelativeDocumentMoniker": "Post.Query\\Post.Query.Domain\\Repositories\\IPostRepository.cs",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Domain\\Repositories\\IPostRepository.cs",
+              "RelativeToolTip": "Post.Query\\Post.Query.Domain\\Repositories\\IPostRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T14:49:59.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CommentsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Repositories\\CommentsRepository.cs",
+              "RelativeDocumentMoniker": "Post.Query\\Post.Query.Infrastructure\\Repositories\\CommentsRepository.cs",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Repositories\\CommentsRepository.cs",
+              "RelativeToolTip": "Post.Query\\Post.Query.Infrastructure\\Repositories\\CommentsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T14:44:56.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Repositories\\PostRepository.cs",
+              "RelativeDocumentMoniker": "Post.Query\\Post.Query.Infrastructure\\Repositories\\PostRepository.cs",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Repositories\\PostRepository.cs",
+              "RelativeToolTip": "Post.Query\\Post.Query.Infrastructure\\Repositories\\PostRepository.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T14:35:40.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EventHandler.cs",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Handlers\\EventHandler.cs",
+              "RelativeDocumentMoniker": "Post.Query\\Post.Query.Infrastructure\\Handlers\\EventHandler.cs",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Handlers\\EventHandler.cs",
+              "RelativeToolTip": "Post.Query\\Post.Query.Infrastructure\\Handlers\\EventHandler.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAUwC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T14:28:38.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IEventHandler.cs",
+              "DocumentMoniker": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Handlers\\IEventHandler.cs",
+              "RelativeDocumentMoniker": "Post.Query\\Post.Query.Infrastructure\\Handlers\\IEventHandler.cs",
+              "ToolTip": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Infrastructure\\Handlers\\IEventHandler.cs",
+              "RelativeToolTip": "Post.Query\\Post.Query.Infrastructure\\Handlers\\IEventHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T14:21:26.192Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

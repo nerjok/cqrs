@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/dell/Documents/charp/cqrs/SM-Post/Post.Query/Post.Query.Domain/Post.Query.Domain.csproj": {}
+    "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj": {}
   },
   "projects": {
-    "/home/dell/Documents/charp/cqrs/CQRS-ES/CQRS.Core/CQRS.Core.csproj": {
+    "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dell/Documents/charp/cqrs/CQRS-ES/CQRS.Core/CQRS.Core.csproj",
+        "projectUniqueName": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj",
         "projectName": "CQRS.Core",
-        "projectPath": "/home/dell/Documents/charp/cqrs/CQRS-ES/CQRS.Core/CQRS.Core.csproj",
-        "packagesPath": "/home/dell/.nuget/packages/",
-        "outputPath": "/home/dell/Documents/charp/cqrs/CQRS-ES/CQRS.Core/obj/",
+        "projectPath": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj",
+        "packagesPath": "C:\\Users\\S8578F\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\CQRS-ES\\CQRS.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/dell/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\S8578F\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -59,34 +66,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/Post.Common.csproj": {
+    "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Common\\Post.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/Post.Common.csproj",
+        "projectUniqueName": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Common\\Post.Common.csproj",
         "projectName": "Post.Common",
-        "projectPath": "/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/Post.Common.csproj",
-        "packagesPath": "/home/dell/.nuget/packages/",
-        "outputPath": "/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/obj/",
+        "projectPath": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Common\\Post.Common.csproj",
+        "packagesPath": "C:\\Users\\S8578F\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/dell/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\S8578F\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/dell/Documents/charp/cqrs/CQRS-ES/CQRS.Core/CQRS.Core.csproj": {
-                "projectPath": "/home/dell/Documents/charp/cqrs/CQRS-ES/CQRS.Core/CQRS.Core.csproj"
+              "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj": {
+                "projectPath": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj"
               }
             }
           }
@@ -95,6 +104,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -116,37 +130,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/dell/Documents/charp/cqrs/SM-Post/Post.Query/Post.Query.Domain/Post.Query.Domain.csproj": {
+    "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dell/Documents/charp/cqrs/SM-Post/Post.Query/Post.Query.Domain/Post.Query.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj",
         "projectName": "Post.Query.Domain",
-        "projectPath": "/home/dell/Documents/charp/cqrs/SM-Post/Post.Query/Post.Query.Domain/Post.Query.Domain.csproj",
-        "packagesPath": "/home/dell/.nuget/packages/",
-        "outputPath": "/home/dell/Documents/charp/cqrs/SM-Post/Post.Query/Post.Query.Domain/obj/",
+        "projectPath": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Domain\\Post.Query.Domain.csproj",
+        "packagesPath": "C:\\Users\\S8578F\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Query\\Post.Query.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/dell/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\S8578F\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/dell/Documents/charp/cqrs/CQRS-ES/CQRS.Core/CQRS.Core.csproj": {
-                "projectPath": "/home/dell/Documents/charp/cqrs/CQRS-ES/CQRS.Core/CQRS.Core.csproj"
+              "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj": {
+                "projectPath": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\CQRS-ES\\CQRS.Core\\CQRS.Core.csproj"
               },
-              "/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/Post.Common.csproj": {
-                "projectPath": "/home/dell/Documents/charp/cqrs/SM-Post/Post.Common/Post.Common.csproj"
+              "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Common\\Post.Common.csproj": {
+                "projectPath": "C:\\Users\\S8578F\\Desktop\\sources\\cqrs\\SM-Post\\Post.Common\\Post.Common.csproj"
               }
             }
           }
@@ -155,6 +171,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -176,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
