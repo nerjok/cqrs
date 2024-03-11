@@ -1,1 +1,1 @@
-ocker-compose up -d
+docker-compose up -d

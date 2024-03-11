@@ -34,8 +34,8 @@ volumes:
   kafka_data:
     driver: local
    
-networks:
-  default:    
-    name: mydockernetwork
-    external: true
+# networks:
+#   default:    
+#     name: mydockernetwork
+#     external: true
     

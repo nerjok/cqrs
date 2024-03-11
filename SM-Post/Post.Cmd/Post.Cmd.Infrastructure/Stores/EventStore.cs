@@ -53,8 +53,8 @@ public class EventStore : IEventStore
 
             await _eventStoreRepository.SaveAsync(eventModel);
             // TODO Configure environment variables in docker ForKafka
-            // var topic = Environment.GetEnvironmentVariable("KAFKA_TOPIC");
-            // await _eventProducer.ProduceAsync(topic, @event);
+            var topic = Environment.GetEnvironmentVariable("KAFKA_TOPIC");
+            await _eventProducer.ProduceAsync(topic, @event);
         }
 
     }
