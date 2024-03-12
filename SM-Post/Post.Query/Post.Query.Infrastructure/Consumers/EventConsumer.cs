@@ -2,7 +2,7 @@
 using CQRS.Core.Consumers;
 using CQRS.Core.Events;
 using Microsoft.Extensions.Options;
-using Post.Query.Infrastructure.Converters;
+using Post.Common.Converters;
 using Post.Query.Infrastructure.Handlers;
 using System.Text.Json;
 
@@ -16,8 +16,8 @@ public class EventConsumer : IEventConsumer
 
     public EventConsumer(IOptions<ConsumerConfig> config, IEventHandler eventHandler)
     {
-        _config=config.Value;
-        _eventHandler=eventHandler;
+        _config = config.Value;
+        _eventHandler = eventHandler;
     }
 
     public void Consume(string topic)

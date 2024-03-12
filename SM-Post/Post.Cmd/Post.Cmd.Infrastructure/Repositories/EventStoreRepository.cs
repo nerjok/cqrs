@@ -1,5 +1,6 @@
 using CQRS.Core.Domain;
 using CQRS.Core.Events;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using Post.Cmd.Domain.Entities;
 using Post.Cmd.Infrastructure.DataAccess;
@@ -24,6 +25,15 @@ public class EventStoreRepository : IEventStoreRepository
             new() { Guid = Guid.NewGuid(), Version = 1},
 
         };
+        var events = _dataContext.events.Where(x => x.AggregateId == aggregateId).Select(x => new EventModel
+        {
+            AggregateIdentifier = x.AggregateId,
+            Guid = x.Id,
+            EventData =x.CastedContent
+        }).ToListAsync();
+
+        return await events;
+        // await context.Post.AsNoTracking().Include(p => p.Comments).Where(x => x.Author == author).ToListAsync();
         return await Task.FromResult(dt);
     }
 
@@ -33,17 +43,19 @@ public class EventStoreRepository : IEventStoreRepository
         {
             Id = Guid.NewGuid(),
             Version = @event.Version,
-            AggregateId = @event.Guid,
+            AggregateId = @event.AggregateIdentifier,
             DatePosted = @event.TimeStamp,
-            Data = JsonConvert.SerializeObject(@event.EventData)
+            Data = JsonConvert.SerializeObject(@event.EventData),
+            CastedContent=@event.EventData
         };
 
-         _dataContext.events.Add(eventData);
-         var dt = await _dataContext.SaveChangesAsync();
+        _dataContext.events.Add(eventData);
+        var dt = await _dataContext.SaveChangesAsync();
 
-         if(dt != null) {
+        if (dt != null)
+        {
 
-         }
+        }
         //  return dt;
         // TODO persist to sqlLite
         // throw new NotImplementedException("Please implemend databas estorage");
