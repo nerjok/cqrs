@@ -39,7 +39,7 @@ public class EventConsumer : IEventConsumer
 
             if (handlerMethod == null)
             {
-                throw new ArgumentNullException("Couldn find event method");
+                throw new ArgumentNullException("Couldnt find event method");
             }
 
             handlerMethod.Invoke(_eventHandler, new object[] { @event });

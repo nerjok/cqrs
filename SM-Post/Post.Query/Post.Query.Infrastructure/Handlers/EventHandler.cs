@@ -30,7 +30,7 @@ public class EventHandler : IEventHandler
 
     public async Task On(MessageUpdatedEvent @event)
     {
-        var post = await _postRepository.GetByIdAsyn(@event.Id);
+        var post = await _postRepository.GetByIdAsync(@event.Id);
         if (post == null) return;
         post.Message = @event.Message;
         await _postRepository.EditAsync(post);
@@ -38,7 +38,7 @@ public class EventHandler : IEventHandler
 
     public async Task On(PostLikedEvent @event)
     {
-        var post = await _postRepository.GetByIdAsyn(@event.Id);
+        var post = await _postRepository.GetByIdAsync(@event.Id);
         if (post == null) return;
         post.Likes++;
         await _postRepository.EditAsync(post);

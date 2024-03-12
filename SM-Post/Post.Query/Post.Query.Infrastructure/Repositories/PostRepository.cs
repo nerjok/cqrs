@@ -24,7 +24,7 @@ public class PostRepository : IPostRepository
     public async Task DeleteAsync(Guid postId)
     {
         using DatabaseContext context = _contextFactory.CreateDBContext();
-        var post = await GetByIdAsyn(postId);
+        var post = await GetByIdAsync(postId);
         if (post == null)
             return;
         context.Post.Remove(post);
@@ -38,7 +38,7 @@ public class PostRepository : IPostRepository
         _ = await context.SaveChangesAsync();
     }
 
-    public async Task<PostEntity> GetByIdAsyn(Guid postId)
+    public async Task<PostEntity> GetByIdAsync(Guid postId)
     {
         using DatabaseContext context = _contextFactory.CreateDBContext();
         return await context.Post.Include(p => p.Comments).FirstOrDefaultAsync(x => x.PostId == postId);
