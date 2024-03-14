@@ -9,11 +9,11 @@ public abstract class AggregateRoot
 
     public Guid Id { get { return _id; } }
     public int Version { get; set; } = -1;
-    public IEnumerable<BaseEvent> GetUncommitedChanges()
+    public IEnumerable<BaseEvent> GetUncommittedChanges()
     {
         return _changes;
     }
-    public void MarkChangesAsCommited()
+    public void MarkChangesAsCommitted()
     {
         _changes.Clear();
     }
@@ -25,6 +25,7 @@ public abstract class AggregateRoot
             throw new ArgumentNullException(nameof(method), $"Apply method was not found {@event.GetType().Name}");
         }
         method.Invoke(this, new object[] { @event });
+        System.Console.WriteLine($"Command to execute: {@event.GetType()}");
         if (isNew)
         {
             _changes.Add(@event);

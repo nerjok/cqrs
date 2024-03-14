@@ -6,8 +6,8 @@ namespace Post.Cmd.Api.Commands;
 
 public class CommandHandler : ICommandHandler
 {
-    private readonly IEventSourcingHander<PostAggregate> _eventSourceHandler;
-    public CommandHandler(IEventSourcingHander<PostAggregate> eventSourceHandler)
+    private readonly IEventSourcingHandler<PostAggregate> _eventSourceHandler;
+    public CommandHandler(IEventSourcingHandler<PostAggregate> eventSourceHandler)
     {
         _eventSourceHandler = eventSourceHandler;
     }

@@ -6,7 +6,7 @@ using Post.Cmd.Infrastructure.Dispatchers;
 
 namespace Post.Common.Handlers;
 
-public class EventSourcingHandler : IEventSourcingHander<PostAggregate>
+public class EventSourcingHandler : IEventSourcingHandler<PostAggregate>
 {
     private IEventStore _eventStore;
     public EventSourcingHandler(IEventStore eventStore)
@@ -30,7 +30,7 @@ public class EventSourcingHandler : IEventSourcingHander<PostAggregate>
 
     public async Task SaveAsync(AggregateRoot aggregate)
     {
-        await _eventStore.SaveEventsAsync(aggregate.Id, aggregate.GetUncommitedChanges(), aggregate.Version);
-        aggregate.MarkChangesAsCommited();
+        await _eventStore.SaveEventsAsync(aggregate.Id, aggregate.GetUncommittedChanges(), aggregate.Version);
+        aggregate.MarkChangesAsCommitted();
     }
 }

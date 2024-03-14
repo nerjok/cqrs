@@ -30,6 +30,7 @@ public class NewPostController : ControllerBase
             await _commandDispatcher.SendAsync(command);
             return StatusCode(StatusCodes.Status201Created, new NewPostResponse
             {
+                Id = command.Id,
                 Message = "New post creation request completed succesfully!"
             });
         }
@@ -42,11 +43,6 @@ public class NewPostController : ControllerBase
                 Message = ex.Message
             });
         }
-    }
-    [HttpGet("kuku")]
-    public string TestMethod()
-    {
-        return "testMethod";
     }
 
     [HttpPut("{id}")]
@@ -88,5 +84,36 @@ public class NewPostController : ControllerBase
                 Message = SAFE_ERROR_MESSAGE
             });
         }
+    }
+
+    [HttpDelete("remove")]
+    public async Task<ActionResult> DeletePostAsync(Guid id, DeletePostCommand command)
+    {
+        try
+        {
+            command.Id = id;
+            await _commandDispatcher.SendAsync(command);
+
+            return Ok(new BaseResponse
+            {
+                Message = "Edit message request completed successfully!"
+            });
+        }
+        catch (Exception ex)
+        {
+            const string SAFE_ERROR_MESSAGE = "Error while processing request to delete post!";
+            _logger.Log(LogLevel.Error, ex, SAFE_ERROR_MESSAGE);
+
+            return StatusCode(StatusCodes.Status500InternalServerError, new BaseResponse
+            {
+                Message = SAFE_ERROR_MESSAGE
+            });
+        }
+    }
+
+    [HttpGet("testcall")]
+    public string TestMethod()
+    {
+        return "testMethod";
     }
 }

@@ -1,4 +1,3 @@
-
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json;
 using CQRS.Core.Events;
@@ -7,18 +6,12 @@ namespace Post.Cmd.Domain.Entities;
 
 public class EventEntity
 {
-
     public Guid Id { get; set; }
     public Guid AggregateId { get; set; }
     public string Author { get; set; }
     public DateTime DatePosted { get; set; }
-
-    [Column(TypeName = "longtext")]
-    public string Data { get; set; }
     public int Version { get; set; }
-
     public string Content { get; set; }
-
     [NotMapped]
     public BaseEvent CastedContent
     {
@@ -30,7 +23,8 @@ public class EventEntity
         }
         set
         {
-            Content = System.Text.Json.JsonSerializer.Serialize(value);
+            var serializedString = System.Text.Json.JsonSerializer.Serialize(value, value.GetType());
+            Content = serializedString;
         }
     }
 }
