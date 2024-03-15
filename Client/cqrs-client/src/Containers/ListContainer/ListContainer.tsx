@@ -124,7 +124,9 @@ function ListContainer() {
         </tbody>
       </table>
       {createMode.isActive ? (
-        <EntryForm onSubmit={submitForm} formValues={createMode.data} />
+        <div className="form-section">
+          <EntryForm onSubmit={submitForm} formValues={createMode.data} />
+        </div>
       ) : null}
     </div>
   );
