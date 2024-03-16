@@ -12,5 +12,5 @@ public class DatabaseContext : DbContext
     }
 
     public DbSet<PostEntity> Post { get; set; }
-    public DbSet<CommentEntity> Comments { get; set; }
+    // public DbSet<CommentEntity> Comments { get; set; }
 }

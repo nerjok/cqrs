@@ -1,71 +1,77 @@
 // MyForm.tsx
-import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
-import { Post } from "./list.model";
+import React, { useState, ChangeEvent, FormEvent, useEffect } from 'react';
+import { Post } from './list.model';
 
 interface MyFormProps {
-  onSubmit: (
-    formData: { author: string; message: string },
-    post?: Post
-  ) => void;
-  formValues?: Post;
+    onSubmit: (
+        formData: { author: string; message: string },
+        post?: Post,
+    ) => void;
+    formValues?: Post;
 }
 
 const EntryForm: React.FC<MyFormProps> = ({ onSubmit, formValues }) => {
-  const [formData, setFormData] = useState({
-    author: formValues?.author ?? "",
-    message: formValues?.message ?? "",
-  });
-
-  useEffect(() => {
-    setFormData(formValues ?? { author: "", message: "" });
-  }, [formValues]);
-
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
+    const [formData, setFormData] = useState({
+        author: formValues?.author ?? '',
+        message: formValues?.message ?? '',
     });
-  };
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    onSubmit(formData, formValues);
+    useEffect(() => {
+        setFormData(formValues ?? { author: '', message: '' });
+    }, [formValues]);
 
-    // If you want to reset the form after submission
-    setFormData({
-      author: "",
-      message: "",
-    });
-  };
+    const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <div className="form-group">
-        <label htmlFor="author">Author</label>
-        <input
-          id="author"
-          type="text"
-          name="author"
-          value={formData.author}
-          onChange={handleInputChange}
-        />
-      </div>
+    const handleSubmit = (e: FormEvent) => {
+        e.preventDefault();
+        onSubmit(formData, formValues);
 
-      <div className="form-group">
-        <label htmlFor="message">Message</label>
-        <input
-          id="message"
-          type="text"
-          name="message"
-          value={formData.message}
-          onChange={handleInputChange}
-        />
-      </div>
+        // If you want to reset the form after submission
+        setFormData({
+            author: '',
+            message: '',
+        });
+    };
 
-      <button type="submit">Submit</button>
-    </form>
-  );
+    return (
+        <form onSubmit={handleSubmit}>
+            <div className='form-group'>
+                <label htmlFor='author'>Author</label>
+                <input
+                    id='author'
+                    type='text'
+                    name='author'
+                    value={formData.author}
+                    onChange={handleInputChange}
+                />
+            </div>
+
+            <div className='form-group'>
+                <label htmlFor='message'>Message</label>
+                <input
+                    id='message'
+                    type='text'
+                    name='message'
+                    value={formData.message}
+                    onChange={handleInputChange}
+                />
+            </div>
+            {formValues?.error ? (
+                <div>
+                    <span className='badge danger'>
+                        <strong>{formValues.error}</strong>
+                    </span>
+                </div>
+            ) : null}
+            <button type='submit'>Submit</button>
+        </form>
+    );
 };
 
 export default EntryForm;

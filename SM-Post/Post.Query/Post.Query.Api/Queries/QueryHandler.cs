@@ -30,12 +30,15 @@ namespace Post.Query.Api.Queries
 
         public async Task<List<PostEntity>> HandleAsync(FindPostsWithCommentsQuery query)
         {
-            return await _postRepository.ListWithCommentsAsync();
+            throw new NotImplementedException("FindPostsWithCommentsQuery not implemented");
+            // return await _postRepository.ListWithCommentsAsync();
         }
 
         public async Task<List<PostEntity>> HandleAsync(FindPostsWithLikesQuery query)
         {
-            return await _postRepository.ListWithLikesAsync(query.NumberOfLikes);
+            throw new NotImplementedException("FindPostsWithLikesQuery not implemented");
+
+            // return await _postRepository.ListWithLikesAsync(query.NumberOfLikes);
         }
     }
 }

@@ -21,6 +21,7 @@ public class CommandHandler : ICommandHandler
     {
         var aggregate = await _eventSourceHandler.GetByAsync(command.Id);
         aggregate.EditMessage(command.Message);
+        aggregate.Version = command.Version;
         await _eventSourceHandler.SaveAsync(aggregate);
     }
 

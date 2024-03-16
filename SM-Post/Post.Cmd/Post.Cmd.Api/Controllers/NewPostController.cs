@@ -1,3 +1,5 @@
+using CQRS.Core.Domain;
+using CQRS.Core.Events;
 using CQRS.Core.Exceptions;
 using CQRS.Core.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
@@ -13,11 +15,13 @@ public class NewPostController : ControllerBase
 {
     private readonly ILogger<NewPostController> _logger;
     private readonly ICommandDispatcher _commandDispatcher;
+    private readonly IEventStoreRepository _eventStoreRepository;
 
-    public NewPostController(ILogger<NewPostController> logger, ICommandDispatcher commandDispatcher)
+    public NewPostController(ILogger<NewPostController> logger, ICommandDispatcher commandDispatcher, IEventStoreRepository eventStoreRepository)
     {
         _logger = logger;
         _commandDispatcher = commandDispatcher;
+        _eventStoreRepository = eventStoreRepository;
     }
 
     [HttpPost]
@@ -115,5 +119,15 @@ public class NewPostController : ControllerBase
     public string TestMethod()
     {
         return "testMethod";
+    }
+
+    [HttpGet("{id}/events")]
+    public async Task<IEnumerable<object>> GetAggregateEvents(Guid id)
+    {
+        var events = await _eventStoreRepository.FindByAggregateId(id);
+        return events.Select(x => {
+            var data = x.EventData;
+            return data;
+            });
     }
 }

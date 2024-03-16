@@ -14,5 +14,7 @@ public class PostEntity
 
     public string Message { get; set; }
     public int Likes { get; set; }
-    public virtual ICollection<CommentEntity> Comments { get; set; }
+    // public virtual ICollection<CommentEntity> Comments { get; set; }
+
+    public int Version { get; set; }
 }

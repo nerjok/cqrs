@@ -10,8 +10,10 @@ using Post.Query.Api.Queries;
 using Post.Query.Infrastructure.Dispatchers;
 using CQRS.Core.Infrastructure;
 using Post.Query.Domain.Entities;
+using Post.Query.Infrastructure.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSignalR();
 
 // Action<DbContextOptionsBuilder> configureDBContext = (o => o.UseLazyLoadingProxies().UseSqlite(builder.Configuration.GetConnectionString("SqlServer")));
 Action<DbContextOptionsBuilder> configureDBContext = (o => o.UseLazyLoadingProxies().UseSqlite(builder.Configuration.GetConnectionString("WebApiDatabase")));
@@ -53,14 +55,25 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 builder.Services.AddCors(o => o.AddPolicy("AnyOrigin", builder =>
 {
-    builder.WithOrigins("*")
-           .AllowAnyMethod()
-           .AllowAnyHeader();
+    // builder.WithOrigins("*")
+    //        .AllowAnyMethod()
+    //        .AllowAnyHeader();
+    builder
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .AllowCredentials()
+    .SetIsOriginAllowed((hosts) => true);
 
 }));
+
+
 var app = builder.Build();
+
+app.MapHub<ChatHub>("/chatHub");
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

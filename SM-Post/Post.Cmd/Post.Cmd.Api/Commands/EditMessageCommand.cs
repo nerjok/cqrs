@@ -10,4 +10,6 @@ public class EditMessageCommand : BaseCommand
 {
     public string Message { get; set; }
 
+    public int Version { get; set;} = 0;
+
 }

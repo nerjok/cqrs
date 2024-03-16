@@ -1,6 +1,9 @@
-﻿using Post.Common.Events;
+﻿using CQRS.Core.Hubs;
+using Microsoft.AspNetCore.SignalR;
+using Post.Common.Events;
 using Post.Query.Domain.Entities;
 using Post.Query.Domain.Repositories;
+using Post.Query.Infrastructure.Hubs;
 
 namespace Post.Query.Infrastructure.Handlers;
 
@@ -8,11 +11,14 @@ public class EventHandler : IEventHandler
 {
     private readonly IPostRepository _postRepository;
     private readonly ICommentsRepository _commentRepository;
+    private readonly IHubContext<ChatHub, IChatHub> _chatHub;
 
-    public EventHandler(IPostRepository postRepository, ICommentsRepository commentRepository)
+
+    public EventHandler(IPostRepository postRepository, ICommentsRepository commentRepository, IHubContext<ChatHub, IChatHub> chatHub)
     {
-        _postRepository=postRepository;
-        _commentRepository=commentRepository;
+        _postRepository = postRepository;
+        _commentRepository = commentRepository;
+        _chatHub = chatHub;
     }
 
     public async Task On(PostCreatedEvent @event)
@@ -26,6 +32,7 @@ public class EventHandler : IEventHandler
         };
 
         await _postRepository.CreateAsync(post);
+        await _chatHub.Clients.All.SendMessage("postUpdated");
     }
 
     public async Task On(MessageUpdatedEvent @event)
@@ -33,7 +40,9 @@ public class EventHandler : IEventHandler
         var post = await _postRepository.GetByIdAsync(@event.Id);
         if (post == null) return;
         post.Message = @event.Message;
+        post.Version = @event.Version;
         await _postRepository.EditAsync(post);
+        await _chatHub.Clients.All.SendMessage("postUpdated");
     }
 
     public async Task On(PostLikedEvent @event)
@@ -48,8 +57,8 @@ public class EventHandler : IEventHandler
     {
         var comment = new CommentEntity
         {
-            PostId= @event.Id,
-            CommentId= @event.CommentId,
+            PostId = @event.Id,
+            CommentId = @event.CommentId,
             CommentDate = @event.CommentDate,
             Comment = @event.Comment,
             Username = @event.Username,
@@ -76,6 +85,7 @@ public class EventHandler : IEventHandler
     public async Task On(PostRemovedEvent @event)
     {
         await _postRepository.DeleteAsync(@event.Id);
+        await _chatHub.Clients.All.SendMessage("postUpdated");
     }
 }
 
